@@ -92,6 +92,7 @@ body {
     box-shadow: 3px 3px 10px #3d3c3c;
     height: 200px;
     top: -300px;
+    transition: all 0.8s;
 }
 .bg-lists.active{
     top: 10px;
