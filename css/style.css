@@ -84,28 +84,36 @@ body {
 
 .bg-lists {
     position: relative;
-    background: #ff99b4;
+    background: rgba(213, 110, 138, 0.5);
     opacity: 0.8;
-    padding: 20px;
+    padding: 25px;
     width: 150px;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #3d3c3c;
     height: 200px;
     top: -300px;
+    transition: all 0.8s;
 }
-.bg-lists.active{
+
+.bg-lists.active {
+    color: black;
     top: 10px;
     transition: all 0.8s;
-    
 }
-.bg-list:hover{
-    background: #a5405d;
+
+.bg-list:hover {
+    background: linear-gradient(109.86deg, #B4284E 30.31%, #D56E8A 80.12%);
+    ;
     box-shadow: 3px 3px 10px #3d3c3c;
     opacity: 0.8;
     cursor: pointer;
     border-radius: 50px;
 }
 
+a.bg-linlk:hover {
+    color: #3d3c3c;
+    font-size: 25px;
+}
 
 .header-item {
     margin-right: 38px;
@@ -229,14 +237,18 @@ h2 {
 }
 
 .card-wrapp {
-    width: 255px;
-    height: 440px;
+    width: 100%;
+    height: 100%;
     left: 245px;
     top: 923px;
     background: rgba(213, 110, 138, 0.15);
     box-shadow: 3px 3px 10px rgba(38, 45, 230, 0.23);
     border-radius: 15px;
     padding: 19px 25px;
+}
+.card-wrapp:hover{
+    box-shadow: 5px 5px 5px 5px rgba(111, 111, 112, 0.4);
+    transition: all 0.5s; 
 }
 
 .img-card {
@@ -272,6 +284,10 @@ h2 {
 
 h2.h2-master {
     margin-bottom: 13px;
+}
+.img-mast{
+    width: 100%;
+    height: 100%;
 }
 
 .description-master {
