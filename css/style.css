@@ -13,6 +13,7 @@ body {
     line-height: 1.2;
     font-weight: normal;
     background: rgba(213, 110, 138, 0.17);
+    margin: 8px;
 }
 
 .wrapper {
@@ -35,8 +36,9 @@ body {
 }
 
 .burger-menu {
-    display: block;
+    display: none;
     position: relative;
+    margin: 10px 10px 10px 10px;
     width: 20px;
     height: 15px;
 }
@@ -118,6 +120,26 @@ a.bg-linlk:hover {
 .header-item {
     margin-right: 38px;
 }
+.nav-top {
+    background-color:#a71038;
+    opacity: 0.2;
+    border-radius: 50%;
+    padding: 0.6em;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+.nav-top:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}.show{
+    display: block;
+}
+
 
 .header-item:last-child {
     margin-right: 0;
@@ -306,6 +328,7 @@ h2.h2-master {
 
 .btn-master {
     margin-top: 100px;
+    font-size: 15px;
     width: 176px;
     height: 40px;
     background: linear-gradient(109.86deg, #B4284E 30.31%, #D56E8A 80.12%);
@@ -313,6 +336,7 @@ h2.h2-master {
     box-sizing: border-box;
     border-radius: 10px;
 }
+
 
 /* F O O T E R*/
 
@@ -369,4 +393,26 @@ a {
     font-size: 18px;
     letter-spacing: 0.21em;
     margin-bottom: 45px;
+}
+@media screen  and (max-width:768px) {
+    
+    .header-list{
+        display:none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    h1{
+        font-size: 100%;
+    }
+    h2{
+        font-size: 70%;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    .footer-logo, .img-offer{
+        display: none;
+    }
+
 }
